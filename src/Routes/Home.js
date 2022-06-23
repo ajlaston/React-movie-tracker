@@ -8,12 +8,6 @@ function Home() {
 
     const ctx = React.useContext(MovieContext);
     const {watchArr, setWatchArr} = ctx.watch;
-
-    //MovieApi.storage.resetStorage();
-
-    React.useEffect(()=>{
-        setWatchArr([]);
-    }, []);
     
     return (
         <div className="home-container">
