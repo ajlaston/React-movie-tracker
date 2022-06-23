@@ -7,14 +7,20 @@ import "./Home.css";
 function Home() {
 
     const ctx = React.useContext(MovieContext);
-    const {watchArr} = ctx.watch;
+    const {watchArr, setWatchArr} = ctx.watch;
 
+    //MovieApi.storage.resetStorage();
+
+    React.useEffect(()=>{
+        setWatchArr([]);
+    }, []);
+    
     return (
         <div className="home-container">
             <h3>Watch List</h3>
             <br />
             {
-                watchArr.length && watchArr.length > 0 ? 
+                watchArr.length > 0 ? 
                 <CardContainer type={"watch"} results={{ watch:  watchArr}} /> 
 
                 :
