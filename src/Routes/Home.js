@@ -14,7 +14,7 @@ function Home() {
             <h3>Watch List</h3>
             <br />
             {
-                watchArr.length > 0 ? 
+                watchArr.length && watchArr.length > 0 ? 
                 <CardContainer type={"watch"} results={{ watch:  watchArr}} /> 
 
                 :
