@@ -7,12 +7,8 @@ import "./Finished.css";
 function Finished(){
 
     const ctx = React.useContext(MovieContext);
-    const {finishedArr} = ctx.finished
+    const {finishedArr} = ctx.finished;
     
-
-    React.useState(()=>{
-
-    }, [])
 
     return (
         <div className="watched-container">
@@ -21,7 +17,7 @@ function Finished(){
             
 
             {
-                finishedArr.length > 0 ? 
+                finishedArr ? 
                 <CardContainer type={"finished"} results={{finished : finishedArr}}/>
 
                 :
