@@ -1,0 +1,67 @@
+.card-container p {
+    font-size: 14px;
+    text-align: center;
+    color: white;
+
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    /* number of lines to show */
+    line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+.card-container button {
+    border: none;
+    background-color: rgba(65, 209, 52, 0.914);
+    color: white;
+    padding: 5px;
+    font-weight: bold;
+    border-radius: 3px;
+    box-shadow: rgba(108, 55, 186, 0.25) 0px 13px 27px -5px, rgba(103, 54, 147, 0.3) 0px 8px 16px -8px;
+}
+
+.title-container {
+    height: 61px;
+}
+
+.explore-card,
+.watched-card,
+.watch-card {
+    display: flex;
+    flex-direction: column;
+    width: 150px;
+    margin: 5px;
+}
+
+.img {
+    height: 217px;
+    background-position: center;
+    background-size: cover;
+    border-radius: 5px;
+    box-shadow: rgba(108, 55, 186, 0.25) 0px 13px 27px -5px, rgba(103, 54, 147, 0.3) 0px 8px 16px -8px;
+}
+
+.watch-card button:nth-child(3) {
+    margin-bottom: 5px;
+
+}
+
+.watch-card button:nth-child(4) {
+    background-color: rgb(227, 84, 84);
+}
+
+.watched-card button {
+    background-color: rgb(227, 84, 84);
+}
+
+.no-results {
+    display: flex;
+    justify-content: center;
+    width: 320px;
+
+    background-color: #8EC5FC;
+    background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+
+}

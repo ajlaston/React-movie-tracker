@@ -1,0 +1,13 @@
+.explore-banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.explore-banner input {
+    padding: 5px;
+    background-color: rgb(231, 235, 239);
+    border: none;
+    border-radius: 2px;
+    outline: none;
+}

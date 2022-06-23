@@ -1,0 +1,29 @@
+.cards-wrapper {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.cards {
+    display: flex;
+    flex-flow: wrap;
+    /* max-height: 556px;  */
+    max-height: 80vh;
+    overflow: scroll;
+    padding-bottom: 80px;
+    justify-content: center;
+    /* width: 320px; */
+}
+
+@media only screen and (min-width : 1040px){
+
+    .cards {
+        padding-left: 250px;
+        padding-right: 250px;
+       
+    }
+}
+
+
+
+
