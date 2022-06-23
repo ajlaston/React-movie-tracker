@@ -20,7 +20,7 @@ function Home() {
             <h3>Watch List</h3>
             <br />
             {
-                watchArr.length > 0 ? 
+                watchArr ? 
                 <CardContainer type={"watch"} results={{ watch:  watchArr}} /> 
 
                 :
