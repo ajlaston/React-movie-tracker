@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const key = "_PVT_";
+const key = "13d4a071";
 const port = "5500"
 
 export const searchMovie = (value="") => {
